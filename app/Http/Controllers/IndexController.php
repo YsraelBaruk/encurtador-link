@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index(){
-        return null;
+        return View('site.index');
     }
     public function redirect(){
-        return null;
+        return View('site.redirect');
     }
     public function contact(){
-        return null;
+        return View('site.contact');
     }
 }
