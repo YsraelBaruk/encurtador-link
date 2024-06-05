@@ -22,7 +22,7 @@ Route::get('/recover', [\App\Http\Controllers\UserController::class, 'recover'])
 Route::get('/login', [\App\Http\Controllers\UserController::class, 'login'])->name("site.login");
 Route::get('/logout', [\App\Http\Controllers\UserController::class, 'logout'])->name("site.logout");
 
-Route::prefix('/app')->groupe(function () {
+Route::prefix('/app')->group(function () {
     Route::get('/generate', [\App\Http\Controllers\LinkController::class, 'generate'])->name("app.generate");
     Route::get('/remove', [\App\Http\Controllers\LinkController::class, 'remove'])->name("app.remove");
     Route::get('/list', [\App\Http\Controllers\LinkController::class, 'list'])->name("app.list");
